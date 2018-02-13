@@ -11,7 +11,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "All about Reinforcement learning"
 title_separator          : "-"
 name                     : "wonseok Jung, 정원석"
 description              : "강화학습 연구를 하며 정리/기록 을 하기 위한 목적으로 만들어진 블로그입니다."
