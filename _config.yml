@@ -14,10 +14,10 @@ locale                   : "en-US"
 title                    : "All about Reinforcement learning"
 title_separator          : "-"
 name                     : "wonseok Jung, 정원석"
-description              : "강화학습 연구를 하며 정리/기록 을 하기 위한 목적으로 만들어진 블로그입니다."
-url                      : "https://wonseokjung.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : https://github.com/wonseokjung
+description              : "Reinforcement."
+url                      : "https://wonseokjung.github.io/"
+baseurl                  : ""
+repository               : "https://github.com/wonseokjung"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -30,7 +30,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            :  5 (default)
+    num_posts            :  #5 (default)
     colorscheme          :  "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
@@ -66,7 +66,7 @@ naver_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :https://www.facebook.com/ws.jung.798
+  username               :"https://www.facebook.com/ws.jung.798"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -97,13 +97,13 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :https://www.facebook.com/ws.jung.798
+  facebook         :"https://www.facebook.com/ws.jung.798"
   foursquare       :
-  github           :https://github.com/wonseokjung
+  github           :"https://github.com/wonseokjung"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :https://www.instagram.com/wonseokjung1/
+  instagram        :"https://www.instagram.com/wonseokjung1/"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
@@ -245,7 +245,7 @@ compress_html:
 
 # Defaults
 defaults:
-   _posts
+  # _posts
   - scope:
       path: ""
       type: posts
