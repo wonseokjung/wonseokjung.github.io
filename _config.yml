@@ -124,11 +124,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "wonseok Jung, 정원석"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : ""
+  location         : "Seoul, South Korea"
+  email            : "wonseokjung@hotmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
