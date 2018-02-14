@@ -8,7 +8,7 @@ use_math:true
 
 
 
-#Monte Carlo Estimation of Action Value
+# Chapter3.2Monte Carlo Estimation of Action Value
 
 
 
@@ -46,7 +46,7 @@ Monte Carlo에서는 DP와 다르게 MDP에 대한 정보가 없으므로 state 
 
 
 
-#Monte Carlo Control
+# Chapter 3.3 Monte Carlo Control
 
 *Optimal policies를 approximate하기 위해서 Monte Carlo simulation 을 어떻게 consider할까요 ? *
 
