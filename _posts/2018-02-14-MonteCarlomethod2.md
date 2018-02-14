@@ -5,7 +5,10 @@ categories: Reinforcementlearning updatasda
 use_math:true
 ---
 
-# 3.2 Monte Carlo Estimation of Action Value
+
+
+
+#Monte Carlo Estimation of Action Value
 
 
 
@@ -43,7 +46,7 @@ Monte Carlo에서는 DP와 다르게 MDP에 대한 정보가 없으므로 state 
 
 
 
-#3.3 Monte Carlo Control
+#Monte Carlo Control
 
 *Optimal policies를 approximate하기 위해서 Monte Carlo simulation 을 어떻게 consider할까요 ? *
 
