@@ -52,15 +52,15 @@ Return 값을 더 많이 observed 한다면, 그 average가 expected value로 co
 이 value function은 $$\pi$$를 따라 state s를 지나며 얻은 value 입니다. 
 
 
-한 Episode에서 발생한 $$state s$$를 $$visit to s$$ 라고 합니다. 
+한 Episode에서 발생한 $$state s$$를 *visit to s* 라고 합니다. 
 
 물론 같은 Episode에서  $$s$$는 여러번 $$visit$$ 할수 있습니다.   
 
-Episode에서 처음 $$visit$$한 것을 *first visit to s *라고 부르겠습니다. 
+Episode에서 처음 $$visit$$한 것을 *first visit to s*라고 부르겠습니다. 
 
-First-visit MC method는* first visit to s* 의 하여 return 된 value를 average한 expected $$v_\pi(s)$$ 입니다. 
+First-visit MC method는 *first visit to s* 의 하여 return 된 value를 average한 expected $$v_\pi(s)$$ 입니다. 
 
-반면에 every-visit MC method는 $$all visit to s$$ 에서 return 한 값을 average한 $$v_\pi(s)$$ 입니다.
+반면에 every-visit MC method는 all visit to s 에서 return 한 값을 average한 $$v_\pi(s)$$ 입니다.
 
 
 이 first-visit MC와 every-visit MC는 비슷해보이지만 이론적으로 다른점이 있습니다. 
