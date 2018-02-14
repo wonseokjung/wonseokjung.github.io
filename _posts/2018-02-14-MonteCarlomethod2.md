@@ -5,9 +5,6 @@ categories: Reinforcementlearning updatasda
 use_math:true
 ---
 
-
-
-
 # 3.2 Monte Carlo Estimation of Action Value
 
 
