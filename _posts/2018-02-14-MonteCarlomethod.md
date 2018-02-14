@@ -29,15 +29,13 @@ Monte Carlo는 Bandit문제와 비슷하게 경험을 하며 return 된 sample�
 
 
 ##### 그렇다면 Bandit문제와 다른점은??
-![title](https://user-images.githubusercontent.com/11300712/36184534-aaa0fcfe-1177-11e8-8445-e60fbb254914.jpg){: width="300" height="300"){: .center}
+![title](https://user-images.githubusercontent.com/11300712/36184534-aaa0fcfe-1177-11e8-8445-e60fbb254914.jpg)
 
-다른점은 같은 episode안에서도 어떤 state에서 action을 함에 따라 다음의 state가 무엇이 될지에 영향을 미치는 것입니다.
+*다른점은 같은 episode안에서도 어떤 state에서 action을 함에 따라 다음의 state가 무엇이 될지에 영향을 미치는 것입니다.*
 
-이러한 nonstationary한 것을 해결하기 위하여 GPI를 이용하여 MDP에서 sample 된 value function을 통하여 배웁니다. Dynamic programming과 같이 GPI를 이용하여 문제를 prediction하고 improvement 하며 solution을 찾습니다. 
+이렇게 nonstationary했을때 발생하는 문제를 해결하기 위하여 GPI를 이용하여 경험을 통해 return된 sample을 이용하여 배웁니다. 
 
-
-
-
+Monte Carlo method 은 Dynamic programming처럼 GPI를 이용하여 문제를 prediction하고 improvement 하며 solution을 찾습니다. 
 
 
 
@@ -45,18 +43,25 @@ Monte Carlo는 Bandit문제와 비슷하게 경험을 하며 return 된 sample�
 
 
 
-3.1 Monte Carlo Prediction
 
-Given policy로 valuefunction을 학습하는 것부터 시작해보자!
 
-State value는 expected한 return입니다. 어떠한 state에서 시작하여 terminal state까지의( discounted 가 적용된 미래의 리워드의 총합) 
 
-경험을 통하여 위의 값을 예측하는 방법은 state들을 visit하며 return 된 값들을 average하는 것 입니다. 
-Return 값을 더 많이 observed 한다면, 그 average로는 expected value로 converge될 것 입니다. 
+* * *
 
-이런 idea를 monte carlo 라고 합니다. 
+## 3.1 Monte Carlo Prediction
 
-예를 들어 vㅠ(s)를 estimate 하고 싶다고 가정하면, policy ㅠ를 따른 state s의 value function입니다. 
+**Monte Carlo 를 이용하여 Prediction을 하기위해, 주어진 policy로 value function을 학습하는것부터 해보겠습니다.**
+
+State value란 어떠한 state에서 시작하여 terminal state까지의 . return된 discounted가 적용된 reward의 총 합 입니다.
+
+Monte carlomethod에서는 경험을 통하여 value를 예측한다고 하였습니다.
+경험을 통하여 value를 예측한다는 의미는, **state들을 visit하며 return 된 값들을 average**하는 것입니다. 
+
+Return 값을 더 많이 observed 한다면, 그 average가 expected value로 converge될 것 입니다. 
+
+위의 idea를 *Monte Carlo *라고 합니다. 
+
+예를 들어 $$\[v_\pi(s)\]$$ estimate 하고 싶다고 가정하면, policy ㅠ를 따른 state s의 value function입니다. 
 이 value function은 ㅠ를 따라 state s를 지나며 얻은 value 입니다. 
 
 
