@@ -12,13 +12,13 @@ use_math : true
 
 이번 챕터에서는 value function을 측정하고, optimal policies를 찾아내는 방법을 배우겠습니다.
  
-**Monte Carlo method는 Dynamic programing처럼 모든 정보를 알고 시작 하는 것이 아닌 actual 혹은 simulated 하게 경험을 하며 환경과 상호작용을 합니다.**
+*Monte Carlo method는 Dynamic programing처럼 모든 정보를 알고 시작 하는 것이 아닌 actual 혹은 simulated 하게 경험을 하며 환경과 상호작용을 합니다.*
 
 그렇기에 Monte Carlo method는 상호작용을 하며 받은 $$state,action, reward$$ 의 값들이 필요합니다.
 
 실제로 경험을 하며 배우는 방법이 좋은 점은 environment의 prior knowledge가 없어도 실제로 경험을 하며 optimal behavior을 이루기 때문입니다. 
 
-**Monte Carlo는 이렇게 경험을 하며 모은 sample return들을 평균하여 강화학습을 풀어갑니다.** 
+*Monte Carlo는 이렇게 경험을 하며 모은 sample return들을 평균하여 강화학습을 풀어갑니다.* 
 
 *우리는 여기서 Episodic task인 Monte carlo만 다루겠습니다.* 
 
@@ -61,7 +61,7 @@ Return 값을 더 많이 observed 한다면, 그 average가 expected value로 co
 
 위의 idea를 *Monte Carlo *라고 합니다. 
 
-예를 들어 $$\[v_\pi(s)\]$$ estimate 하고 싶다고 가정하면, policy ㅠ를 따른 state s의 value function입니다. 
+예를 들어 $$v_\pi(s)$$ estimate 하고 싶다고 가정하면, policy ㅠ를 따른 state s의 value function입니다. 
 이 value function은 ㅠ를 따라 state s를 지나며 얻은 value 입니다. 
 
 
