@@ -1,5 +1,5 @@
 ---
-title: "3.Monte Carlo method and prediction
+title: "3.Monte Carlo method and prediction"
 date: 2018-02-14 10:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
@@ -134,8 +134,8 @@ Policy는 플레이어의 sum이 20-21일때 stick하고 아니면 hit 합니다
 여기서는 한 episode에서 똑같은 state를 visit하지 않기 때문에 first visit과 every visit의 결과값이 똑같습니다. 
 
 여기서는 아래의 그림과 같은 결과값을 보여줍니다. 
-![screenshot from 2018-02-14 13-31-04](https://user-images.githubusercontent.com/11300712/36187968-2685ed66-118c-11e8-88bf-2b7b2357714c.png)
 
+![screenshot from 2018-02-14 13-31-04](https://user-images.githubusercontent.com/11300712/36187864-7eb333b4-118b-11e8-9a70-20b579fbfe6a.png)
 Usable이 less common하기 때문에 less certain, regular 한 경향을 보입니다. 
 
 500,000번 이상 돌렸을때 value function이 approximate가 잘 된것 같이 보입니다.
@@ -156,9 +156,8 @@ Monte Carlo 에서 $$v_\pi(s)$$를 estimate할때,  root는 state node 입니다
 
 Dp에서는 모든 possible transitions을 다 보여주지만 Monte Carlo 에서는 오직 한 episode에서의 sample만을 보여줍니다.  
 
-아래 그림과 같이 시작 state s에서부터 terminal되는 ㄴㅅㅁ지의 agent가 실제로 action을 선택하며 visit to s한 sample 입니다. 
+아래 그림과 같이 시작 state s에서부터 terminal되는 state의 agent가 실제로 action을 선택하며 visit to s한 sample 입니다. 
 
-![screenshot from 2018-02-14 13-31-21](https://user-images.githubusercontent.com/11300712/36187974-3269a6c2-118c-11e8-99c4-bc48737a8de0.png)
 
 
 *Monte Carlo의 중요한 사실은 각 state의 estimate는 independent라는 것 입니다.  DP와는 다르게 Monte carlo는 다른 state에 의해 value가 estimate되지 않습니다.
