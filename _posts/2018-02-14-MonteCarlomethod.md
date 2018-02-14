@@ -35,17 +35,6 @@ Monte Carlo는 Bandit문제와 비슷하게 경험을 하며 return 된 sample�
 
 Monte Carlo method 은 Dynamic programming처럼 GPI를 이용하여 문제를 prediction하고 improvement 하며 solution을 찾습니다. 
 
-
-
-
-
-
-
-
-
-
-* * *
-
 ## 3.1 Monte Carlo Prediction
 
 **Monte Carlo 를 이용하여 Prediction을 하기위해, 주어진 policy로 value function을 학습하는것부터 해보겠습니다.**
@@ -77,13 +66,6 @@ First-visit MC method는* first visit to s* 의 하여 return 된 value를 avera
 이 first-visit MC와 every-visit MC는 비슷해보이지만 이론적으로 다른점이 있습니다. 
 
 Every visit MC는 뒤에서 알아보기로 하고 지금은 먼저 First visit에 대해 알아보겠습니다. 
-
-
-
-
-
-
-
 
 
 
@@ -142,7 +124,7 @@ Usable이 less common하기 때문에 less certain, regular 한 경향을 보입
 
 우리가 모든 정보를 갖고 있다고 하더라도 Blackjack은 DP로 풀기가 굉장히 힘듭니다. 
 
-BlackJack에서는 P(s’,r|s,a)를 알수가 없기 때문입니다. 
+BlackJack에서는 P(s’,r|s,a) 를 알수가 없기 때문입니다. 
 
 반면에 Moten Carlo처럼 sample을 generate할수 있다면 가능해 집니다.
 
