@@ -1,14 +1,12 @@
 ---
-title: "Monte Carlo Estimation and Monte Carlo control"
+title: "Monte"
 date: 2018-02-14 14:16:28 -0400
 categories: Reinforcementlearning update
 use_math:true
 ---
 
 
-
-
-# Chapter3.2Monte Carlo Estimation of Action Value
+# 3.2 Monte Carlo Estimation of Action Value
 
 
 
@@ -42,11 +40,7 @@ Monte Carlo에서는 DP와 다르게 MDP에 대한 정보가 없으므로 state 
 
 
 
-
-
-
-
-# Chapter 3.3 Monte Carlo Control
+#3.3 Monte Carlo Control
 
 *Optimal policies를 approximate하기 위해서 Monte Carlo simulation 을 어떻게 consider할까요 ? *
 
@@ -98,17 +92,14 @@ Estimate할때 error의 magnitude와 probability를 측정하고 추정하는데
 *각 Policy improvement step마다, 한번의 policy evaluation이 수행 됩니다. 
 (그렇기에 policy evaluation이 converge될 필요가 없습니다.)*
 
-Monte Carlo Policy Evaluation의 evaluation을 에피소드가 끝날때마다 improvement 합니다.
+Monte Carlo Policy Evaluation의 evaluation을 improvement an episodes by episode를 기반으로 합니다. 
 
-각 Episode마다 observed된 return을 policy evaluation으로 사용됩니다. 
-
-그리고 policy가 episode에서 visited된 state로 update합니다. 
+각 Episode마다 observed된 return을 policy evaluation으로 사용됩니다. 그리고 policy가 episode에서 visited된 state로 update합니다. 
 
 
 아래는 Monte Carlo Exploring start 수도코드 입니다. 
 
 ![screenshot from 2018-02-14 15-17-49](https://user-images.githubusercontent.com/11300712/36190240-775d3394-119a-11e8-9cec-bd7cf7407d98.png)
-
 
 Monte Carlo ES ( Exploring Starts )
 
@@ -119,14 +110,14 @@ Initializer :
 	비어있는 list인 Returns(s,a)를 생성합니다, 
 
 계속 반복합니다: 
-모든 state S0과 A0이 선택될 확률은 non zero의 값으로 선택합니다. 
-Episode에서 S0,A0에서 시작되어 ㅠ(s)를 따른 값을 생성합니다. 
+모든 state $$S0$$과 $$A0$$이 선택될 확률은 non zero의 값으로 선택합니다. 
+Episode에서 $$S0,A0$$에서 시작되어 $$\pi(s)$$를 따른 값을 생성합니다. 
 각 Episode에서 s,a에 대해 :
 	
 
-처음 발생한 s,a에 따라 return된 값을 G에 넣습니다. 
-G를 returns(s,a)에 append합니다. 
-Append된 returns(s,a)를  average한 뒤  Q(s,a)의 값으로 업데이트 합니다. 
-Episode의 각 state마다 Q(s,a)를 최대화 시키는 action을 ㅠ(s)로 업데이트 합니다. 
+처음 발생한 $$s,a$$에 따라 return된 값을 $$G$$에 넣습니다. 
+$$G$$를 $$returns(s,a)$$에 append합니다. 
+Append된 returns(s,a)를  average한 뒤  $$Q(s,a)$$의 값으로 업데이트 합니다. 
+Episode의 각 state마다 $$Q(s,a)$$를 최대화 시키는 action을 $$\pie(s)$$로 업데이트 합니다. 
 
 
