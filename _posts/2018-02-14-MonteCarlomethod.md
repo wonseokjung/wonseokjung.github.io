@@ -1,10 +1,8 @@
 ---
-
 title: "3.Monte Carlo method and prediction
 date: 2018-02-14 10:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
-
 ---
 
 # Chapter 3. Monte Carlo Methods
