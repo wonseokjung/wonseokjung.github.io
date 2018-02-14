@@ -149,3 +149,9 @@ Dp에서는 모든 possible transitions을 다 보여주지만 Monte Carlo 에�
 
 *Monte Carlo의 중요한 사실은 각 state의 estimate는 independent라는 것 입니다.  DP와는 다르게 Monte carlo는 다른 state에 의해 value가 estimate되지 않습니다.
 그러므로 Monte Carlo는 Bootstrap이 아닙니다.*
+
+
+## Reference 
+* Reinforcement Learning: An Introduction Richard S. Sutton and Andrew G. Barto Second Edition, in progress
+MIT Press, Cambridge, MA, 2017
+
