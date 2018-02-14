@@ -10,27 +10,30 @@ use_math : true
 # Chapter 3. Monte Carlo Methods
 
 
-![Screenshot from 2018-01-25 09-01-41.png](/home/wonseok/Desktop/Screenshot from 2018-01-25 09-01-41.png)
-
-![](http://)
 이번 챕터에서는 value function을 측정하고, optimal policies를 찾아내는 방법을 배우겠습니다.
  
-Monte Carlo method는 Dynamic programing처럼 모든 정보를 알고 시작 하는 것이 아닌 actual 혹은 simulated 하게 경험을 하며 환경과 상호작용을 합니다.
+**Monte Carlo method는 Dynamic programing처럼 모든 정보를 알고 시작 하는 것이 아닌 actual 혹은 simulated 하게 경험을 하며 환경과 상호작용을 합니다.**
 
-그렇기에 Monte Carlo method는 상호작용을 하며 받은 state,action, reward의 값들이 필요합니다. 
+그렇기에 Monte Carlo method는 상호작용을 하며 받은 $$state,action, reward$$ 의 값들이 필요합니다.
 
-Actual experience의 방법이 좋은 점은 environment의 prior knowledge가 하나도 없어도 actual experience를 하며 optimal behavior을 이루기 때문입니다. 
+실제로 경험을 하며 배우는 방법이 좋은 점은 environment의 prior knowledge가 없어도 실제로 경험을 하며 optimal behavior을 이루기 때문입니다. 
 
-Simulate로 배운것 또한 powerful합니다. Monte Carlo는 sample return들을 averaging 하여 강화학습을 풀어갑니다. 
+**Monte Carlo는 이렇게 경험을 하며 모은 sample return들을 평균하여 강화학습을 풀어갑니다.** 
 
-우리는 여기서 Episodic task인 Monte carlo만 다루겠습니다. Monte carlo는 step-by-step(online)이 아닌 episode-by-episode로서 한 time step마다 value function고 policy를 변화시키는 것이 아닌 terminal state까지 가야 policy와 value function이 바뀝니다. 
+*우리는 여기서 Episodic task인 Monte carlo만 다루겠습니다.* 
 
-Monte Carlo는 임의의 요소를 estimation하는 방법으로 쓰입니다. 여기서 우리는 return 을 averaging하는 방법을 쓰도록 하겠습니다. 
+Monte carlo는 ***step-by-step(online)이 아닌 episode-by-episode로서 한 time step마다 value function고 policy를 변화시키는 것이 아닌 에피소드의 마지막 스테이트 terminal state 까지***가야 policy와 value function이 바뀝니다.
 
-Monte Carlo는 Bandit문제와 비슷하게 sampling하여 return된 state-action value를 average합니다. 
-다른점은 같은 episode안에서도 어떤 state에서 action을 함에 따라 다음의 state가 무엇이 될지에 영향을 미치는 것입니다.  
+Monte Carlo는 Bandit문제와 비슷하게 경험을 하며 return 된 sample을 이용하여 state-action value를 평균합니다. 
 
-이러한  nonstationary한 것을 해결하기 위하여 GPI를 이용하여 MDP에서 sample 된 value function을 통하여 배웁니다. Dynamic programming과 같이 GPI를 이용하여 문제를 prediction하고 improvement 하며 solution을 찾습니다. 
+
+
+##### 그렇다면 Bandit문제와 다른점은??
+![title](https://user-images.githubusercontent.com/11300712/36184534-aaa0fcfe-1177-11e8-8445-e60fbb254914.jpg){: width="300" height="300"){: .center}
+
+다른점은 같은 episode안에서도 어떤 state에서 action을 함에 따라 다음의 state가 무엇이 될지에 영향을 미치는 것입니다.
+
+이러한 nonstationary한 것을 해결하기 위하여 GPI를 이용하여 MDP에서 sample 된 value function을 통하여 배웁니다. Dynamic programming과 같이 GPI를 이용하여 문제를 prediction하고 improvement 하며 solution을 찾습니다. 
 
 
 
@@ -685,3 +688,5 @@ Off-policy도 explore하지만 policy followed와 다를수 있는 deterministic
 
 
 
+
+[^]: 
