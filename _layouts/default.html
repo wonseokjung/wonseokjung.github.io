@@ -1,6 +1,6 @@
 ---
 ---
-
+{% include base_path %}
 <!doctype html>
 <!--
   Minimal Mistakes Jekyll Theme 4.9.1 by Michael Rose
@@ -8,16 +8,16 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-    
     {% include head.html %}
     {% include head/custom.html %}
     {% if page.use_math %}
-      {% include mathjax_support %}
+    {% include mathjax_support.html %}
     {% endif %}
-
   </head>
+
+  
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
