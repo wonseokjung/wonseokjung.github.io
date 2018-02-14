@@ -1,9 +1,8 @@
-
 ---
 title: "Monte Carlo Estimation and Monte Carlo control"
 date: 2018-02-14 14:16:28 -0400
-categories: Reinforcementlearning update
-use_math : true
+categories: Reinforcementlearning updatasda
+use_math:true
 ---
 
 
