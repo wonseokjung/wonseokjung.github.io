@@ -142,7 +142,7 @@ Usable이 less common하기 때문에 less certain, regular 한 경향을 보입
 
 우리가 모든 정보를 갖고 있다고 하더라도 Blackjack은 DP로 풀기가 굉장히 힘듭니다. 
 
-BlackJack에서는 $$P(s’,r|s,a)$ $ 를 알수가 없기 때문입니다. 
+BlackJack에서는 $$ P(s’,r|s,a) $$ 를 알수가 없기 때문입니다. 
 
 반면에 Moten Carlo처럼 sample을 generate할수 있다면 가능해 집니다.
 
