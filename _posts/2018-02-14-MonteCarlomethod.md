@@ -157,8 +157,11 @@ Monte Carlo 에서 $$v_\pi(s)$$를 estimate할때,  root는 state node 입니다
 Dp에서는 모든 possible transitions을 다 보여주지만 Monte Carlo 에서는 오직 한 episode에서의 sample만을 보여줍니다.  
 
 아래 그림과 같이 시작 state s에서부터 terminal되는 state의 agent가 실제로 action을 선택하며 visit to s한 sample 입니다. 
+
+
 ![screenshot from 2018-02-14 13-31-21](https://user-images.githubusercontent.com/11300712/36187866-802f0696-118b-11e8-926b-c09ff1436a5d.png)
 
 
+
 *Monte Carlo의 중요한 사실은 각 state의 estimate는 independent라는 것 입니다.  DP와는 다르게 Monte carlo는 다른 state에 의해 value가 estimate되지 않습니다.
-그러므로 Monte Carlo는 Bootstrap이 아닙니다. *
+그러므로 Monte Carlo는 Bootstrap이 아닙니다.*
