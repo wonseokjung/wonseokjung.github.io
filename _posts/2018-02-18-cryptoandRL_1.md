@@ -1,7 +1,7 @@
 ---
 title: "강화학습과 가상화폐"
 date: 2018-02-15 23:26:28 -0400
-categories: Reinforcementlearning update
+categories: Crypto_RL update
 use_math : true
 ---
 
