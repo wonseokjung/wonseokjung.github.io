@@ -1,6 +1,6 @@
 ---
 title: "Monte Carlo Method-3"
-date: 2018-02-14 10:26:28 -0400
+date: 2018-02-16 22:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
 ---
