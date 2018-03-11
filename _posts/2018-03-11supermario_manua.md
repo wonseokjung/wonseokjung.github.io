@@ -1,11 +1,11 @@
-
-
 ---
-title: "Reinforce Super Mario"
+title: "Reinforce Super Mario Manual"
 date: 2018-03-11 12:26:28 -0400
-categories: RL_code update
+categories: Reinforcementlearning update
 use_math : true
 ---
+
+
 
 
 # 강화학습을 이용한 인공지능 슈퍼마리오 만들기 
