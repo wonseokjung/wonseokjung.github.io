@@ -1,8 +1,8 @@
 
 
 ---
-title: "강화학습을 이용한 인공지능 슈퍼마리오 만들기"
-date: 2018-03-11 11:26:28 -0400
+title: "Reinforce Super Mario"
+date: 2018-03-11 12:26:28 -0400
 categories: RL_code update
 use_math : true
 ---
