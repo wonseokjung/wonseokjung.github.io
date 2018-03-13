@@ -41,7 +41,7 @@ OpenAI는 강화학습을 실험해볼 수 있도록, gym과 Baselines같은 강
 [Baselines 깃허브 링크](https://github.com/openai/baselines)
 
 
-1. gym 설치하기
+### 1. gym 설치하기
 `pip3 install gym`
 
 gym을 설치하기 위해 python 3.5이상 버전에서 pip3 명령어로 gym을 설치한다. 
@@ -58,7 +58,7 @@ pip3 install -e .
 
 - - -
 
-2. Environments
+### 2. Environments
 
 Algorithm을 환경에 적용해 보기전에, 
 
@@ -91,7 +91,7 @@ gym을 통하여 카트폴 환경을 부르고, action을 선택하며 화면에
 
 - - -
 
-3. Observations
+### 3. Observations
 
 위의 예는 env.action_space.sample()을 통하여 임의의 action을 선택하였다.
 
