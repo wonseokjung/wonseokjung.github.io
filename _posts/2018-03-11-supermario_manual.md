@@ -473,7 +473,9 @@ player_status : 작은마리오일때 -> 0 , 큰 마리오일때 ->1, 불꽃을 
 
 현재 state의 이미지 사이즈를 출력합니다. 
 
+좀 더 자세한 openai 사용법은 아래의 링크를 참조
 
+https://wonseokjung.github.io/reinforcementlearning/update/openai-gym/
 ### 5.2 슈퍼마리오의 action
 
 마리오는 다음과 같은 배열로 action을 인식합니다.
