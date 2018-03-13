@@ -1,9 +1,9 @@
 
 ---
-title: "강화학습의 구현을 위한 Gym사용법"
-date: 2018-03-13 17:26:28 -0400
+title: "OpenAI-Gym for Reinforcement Learning"
+date: 2018-03-13 12:26:28 -0400
 categories: Reinforcementlearning update
-use_math :false
+use_math : true
 ---
 
 
