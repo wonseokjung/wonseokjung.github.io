@@ -65,11 +65,17 @@ Algorithm을 환경에 적용해 보기전에,
 Cartpole이란 게임을 gym라이브러리를 통해 불러와서 action을 선택해보도록 하겠다. 
 
 a. 함수 설명
+
 `gym.make()` : 강화학습 환경을 불러온다.  
+
 `env.reset()` : 환경을 초기화 한다. 
+
 `env.render()` : 화면을 출력한다.
+
 `env.action_space.sample()` : 임의의 action을 선택 
+
 `env.step` : 선택한 action을 환경으로 보낸다.
+
 ```
 import gym
 
