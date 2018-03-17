@@ -1,9 +1,9 @@
- ---
+---
 title: "Monte Carlo method-1"
 date: 2018-02-14 10:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
- ---
+---
 
 # Chapter 3. Monte Carlo Methods
 
