@@ -1,6 +1,6 @@
 ---
-title: "Monte Carlo method-1"
-date: 2018-02-14 10:26:28 -0400
+title: "번외_권휘님의 UCB 소개"
+date: 2018-03-13 10:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
 ---
