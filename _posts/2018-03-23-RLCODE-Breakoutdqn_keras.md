@@ -526,7 +526,7 @@ def pre_processing(observe):
 - [ ] 일정 에피소드마다 모델을 저장한다.
 
 
-````
+```
 if __name__ == "__main__":
     # 환경과 DQN 에이전트 생성
     env = gym.make('BreakoutDeterministic-v4')
