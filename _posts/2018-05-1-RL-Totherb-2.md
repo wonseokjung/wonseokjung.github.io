@@ -108,7 +108,7 @@ $$R$$: reward function
 
 $$\gamma$$ : discount factor을 뜻한다. 
 
-$$P(y|x,a)$$ : state $ㅈ$\chi$$에서 action a를 했을때의 y로 transition할 probability
+$$P(y|x,a)$$ : state $$\chi$$에서 action a를 했을때의 y로 transition할 probability
 
 $$\pi(.|x)$$ : stochastic policy $$\pi$$ 은 action에 따라 각 state로 mapping되어있다. 
 
