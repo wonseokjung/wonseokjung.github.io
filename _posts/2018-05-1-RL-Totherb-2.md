@@ -100,7 +100,7 @@ $$ M = (\chi ,A,R,P,\gamma) $$
 
 여기서
 
-$$\chi $$: state space
+$$\chi$$: state space
 
 $$A$$: action space
 
@@ -118,7 +118,7 @@ $$\pi(a|x)$$ : state $$\chi$$에서 action a 를 선택할수 있는 probability
 
 이 policy $$\pi$$ 로 인해 결정된 action-value function $$Q_{\pi}$$는 아래와 같이 정의한다. 
 
-$$Q_{\pi}(x,a) = \mathbb{E}_{\pi} [\sum_{t=0}^{+\infty } \gamma^{t}R(x_t,a_t) ]$$
+$$Q_{\pi}(x,a)$$ $$=\mathbb{E}_{\pi}[\sum{t=0}^{+\infty }\gamma^{t}R(x_t,a_t) ]$$
 
 
 $$\mathbb{E}_{\pi}$$ :x0, a0 에서 시작하여 policy 를 따른  trajectories (x0, a0,x1,a1 ... )에 의한 expectation
@@ -129,7 +129,7 @@ $$Q_{\pi}(x,a)$$는 x에서 a를 선택하며 policy를 따른 discounted된 rew
 
 higher return을 받지 않을때 policy가 optimal 되었다고 하며, optimal 된 value function은 아래와 같이 정의한다. 
 
-$$Q_{*} = \underset{a}{argmax} Q_{\pi}($$\chi $$,a)$$
+$$Q_{*} = \underset{a}{argmax} Q_{\pi}(\chi,a)$$
 
 마찬가지로, 
 
@@ -294,7 +294,7 @@ DQN과 Dueling에서의 Fully connected layer의 valuenetwork는 매 step마다 
 
 $$Q(x,a,\epsilon ; \zeta)$$ : noise variables의 distribution $$\epsilon$$이 적용된 noisy value function. 
 
-$$Q(x,a,\epsilo^{'},; \zeta^{-})$$:  noise variables의 distribution $$\epsilon^{'}$$이 적용된 noisy target value function
+$$Q(x,a,\epsilon^{'},; \zeta^{-})$$:  noise variables의 distribution $$\epsilon^{'}$$이 적용된 noisy target value function
 
 
 ![5_1_noisynetworks 016](https://user-images.githubusercontent.com/11300712/39462001-48e3b70e-4cc3-11e8-9089-b8e5a35f9dad.jpeg)
