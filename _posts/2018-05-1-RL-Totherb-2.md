@@ -108,11 +108,11 @@ $$R$$: reward function
 
 $$\gamma$$ : discount factor을 뜻한다. 
 
-$$P (y|x,a)$$ : state $$\chi$$에서 action a를 했을때의 y로 transition할 probability
+$$P (y\mid x,a)$$ : state $$\chi$$에서 action a를 했을때의 y로 transition할 probability
 
-$$\pi (.|x)$$ : stochastic policy $$\pi$$ 은 action에 따라 각 state로 mapping되어있다. 
+$$\pi (.\mid x)$$ : stochastic policy $$\pi$$ 은 action에 따라 각 state로 mapping되어있다. 
 
-$$\pi (a|x)$$ : state $$\chi$$에서 action a 를 선택할수 있는 probability 
+$$\pi (a\mid x)$$ : state $$\chi$$에서 action a 를 선택할수 있는 probability 
 
 와 같이 정의하며, 
 
@@ -135,7 +135,7 @@ $$Q_{*} = \underset{a}{argmax} Q_{\pi}(\chi,a)$$
 
 Policy를 따른 value fucntion $$V_{\pi}$$ 은 다음과 같이 정의한다. 
 
-$$V_{\pi}(x)=\mathbb{E}_{a~\pi(.|x)}Q_{\pi}(\chi,a)$$ 
+$$V_{\pi}(x)=\mathbb{E}_{a~\pi(.\mid x)}Q_{\pi}(\chi,a)$$ 
 
 
 #### 2.2 Deep Reinforcement Learning
@@ -160,7 +160,7 @@ DQN은  action-value function $$Q(x,a)$$의 neural network parameter $$\theta$$�
 
 
 
-* D : Replaybuffer에서의 $$e = x,a,r = R(x,a)y~ P(.|x,a))$$ transition 을 따른
+* D : Replaybuffer에서의 $$e = x,a,r = R(x,a)y~ P(.\mid x,a))$$ transition 을 따른
 
 distribution에서 drawn한 것이다. 
 
