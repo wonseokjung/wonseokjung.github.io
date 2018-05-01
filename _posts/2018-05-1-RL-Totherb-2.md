@@ -108,7 +108,7 @@ $$R$$: reward function
 
 $$\gamma$$ : discount factor을 뜻한다. 
 
-$$P(y|x,a)$$ : state $\chi$$에서 action a를 했을때의 y로 transition할 probability
+$$P(y|x,a)$$ : state $ㅈ$\chi$$에서 action a를 했을때의 y로 transition할 probability
 
 $$\pi(.|x)$$ : stochastic policy $$\pi$$ 은 action에 따라 각 state로 mapping되어있다. 
 
@@ -294,7 +294,7 @@ DQN과 Dueling에서의 Fully connected layer의 valuenetwork는 매 step마다 
 
 $$Q(x,a,\epsilon ; \zeta)$$ : noise variables의 distribution $$\epsilon$$이 적용된 noisy value function. 
 
-$$Q(x,a,\epsilo^{'},; \zeta^{-})$$:  noise variables의 distribution $$\epsilon '$$이 적용된 noisy target value function
+$$Q(x,a,\epsilo^{'},; \zeta^{-})$$:  noise variables의 distribution $$\epsilon^{'}$$이 적용된 noisy target value function
 
 
 ![5_1_noisynetworks 016](https://user-images.githubusercontent.com/11300712/39462001-48e3b70e-4cc3-11e8-9089-b8e5a35f9dad.jpeg)
