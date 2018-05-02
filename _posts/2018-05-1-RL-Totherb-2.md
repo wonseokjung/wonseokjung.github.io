@@ -44,7 +44,7 @@ exploration을 할때 reward를 bonus로 주는 방법을 사용하였다.
 
 Deepmind에서 2018년 2월 15일  Noisy Networks for exploration이란 논문으로 새로운 exploration 방법인 noisy net을 propose하였고. 
 
-이 noisy net은 exploration을 하기위해 network weight의 pertubation을 배운다. 
+이 noisy net은 exploration을 하기위해 network weight의 perturbation을 배운다. 
 
 
 
@@ -55,7 +55,7 @@ Deepmind에서 2018년 2월 15일  Noisy Networks for exploration이란 논문�
 
 
 
-Pertubations은 noisy distribution에서 sample되어진다. 
+Perturbations은 noisy distribution에서 sample되어진다. 
 
 이 알고리즘에서의 functional form은 neural network이며,  valuefunction을 randomized한다. 
 
@@ -206,7 +206,7 @@ distribution D 와 target network parameter set $$\theta^{-}$$은 DQN과 비슷�
 
 
 
-NoisyNets은 parametric function of noise에 의해 pertubed된 neural netwok의 weight와 bias이다. 
+NoisyNets은 parametric function of noise에 의해 perturbed된 neural netwok의 weight와 bias이다. 
 
 이 parameter들은 gradient descent에 의해 adapted된다. 
 
