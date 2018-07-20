@@ -1,12 +1,9 @@
-
-
+---
 title: "On-policy Control with Approximation"
 date: 2018-07-20 12:26:28 -0400
 categories: Reinforcementlearning update
-
-## use_math : true
-
-
+use_math : true
+---
 
 <img src="https://www.dropbox.com/s/2osdrb8vt5g3l4m/Screenshot%202018-07-16%2021.10.10.png?raw=1">
 
