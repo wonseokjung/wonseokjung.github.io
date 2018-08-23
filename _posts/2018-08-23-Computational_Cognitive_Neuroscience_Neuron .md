@@ -1,6 +1,6 @@
 ---
 title: "뇌과학으로 보는 강화학습 - Neuron"
-date: 2018-08-03 22:26:28 -0400
+date: 2018-08-23 22:26:28 -0400
 categories: NeuroScience
 use_math : true
 ---
@@ -264,44 +264,7 @@ Note 1 : 뇌는 plastic하다.
 
 
 
-#### 1.4 Mathmatical Formulations 
 
-
-
-neuron 이 어떠한 방법으로 excitation 과  inhibition을 intergrate하는지 이해하여보자. 
-
-
-
-이 과정을 수학 equation을 computer로 시뮬레이션하여 알수가 있다. 
-
-
-
-이 mathmatical formulation을 
-1.computing inputs 
-
-2.computing outputs 
-
-로 나누어 알아보도록 하겠다. 
-
-
-
-
-
-#### 1.4.1 Computing Inputs
-
-
-
-
-
-
-
-##### Neural Integration
-
-##### 
-
--  excitatory current 
-
-  $I_e=g_e (E_e - V_m)$ 
 
 
 
