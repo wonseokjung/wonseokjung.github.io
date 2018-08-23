@@ -33,7 +33,6 @@ use_math : true
 
 
 
-
 Neuron 들은 다른 Neuron으로부터 여러가지 신호를 Input으로 받으며 그 신호들 중 의미가 있는 특정한 신호를 찾는다. 
 
 
