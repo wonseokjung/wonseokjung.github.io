@@ -1,7 +1,11 @@
+---
 title: "Metalearning shared Hierarchy 논문 리뷰 "
 date: 2018-08-28 12:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
+---
+
+
 
 <img src="https://www.dropbox.com/s/ea60km7lmpqahzd/Screenshot%202018-08-26%2017.49.53.png?raw=1">
 
