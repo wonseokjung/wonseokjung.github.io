@@ -1,3 +1,12 @@
+---
+title: "강화학습으로 인공지능 슈퍼마리오 만들기 강의 1편"
+date: 2018-09-03 12:26:28 -0400
+categories: Reinforcementlearning update
+use_math : true
+---
+
+
+
 # A.I SuperMario Tutorial 
 
 
