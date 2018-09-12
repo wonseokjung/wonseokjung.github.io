@@ -1,10 +1,13 @@
 ---
-
 title: "Faster Reinforcement Learning via Transfer"
 date: 2018-09-11 12:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
---- <img src="https://www.dropbox.com/s/76z0fvih6xxnrlh/Screenshot%202018-09-07%2006.46.28.png?raw=1">
+--- 
+
+
+
+<img src="https://www.dropbox.com/s/76z0fvih6xxnrlh/Screenshot%202018-09-07%2006.46.28.png?raw=1">
 
 
 
