@@ -1,6 +1,6 @@
 ---
 title: "github for collaboration"
-date: 2019-01-12 12:26:28 -0400
+date: 2018-01-12 12:26:28 -0400
 categories: Reinforcementlearning update
 use_math : true
 ---
