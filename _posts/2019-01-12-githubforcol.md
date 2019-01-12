@@ -1,9 +1,10 @@
 ---
 title: "github for collaboration"
-date: 2019-01-12 15:26:28 -0400
-categories: github update
+date: 2019-01-12 12:26:28 -0400
+categories: Reinforcementlearning update
 use_math : true
 ---
+
 
 
 
