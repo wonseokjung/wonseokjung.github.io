@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Kiko Now
+name: wonseok Jung
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: about Reinforcement learning
 
 #
 # Flags below are optional
@@ -29,7 +29,7 @@ navigation:
   - name: Tags
     url: /tags
   - name: Theme
-    url: https://github.com/AWEEKJ/kiko-now
+    url: https://wonseokjung.github.io
 
 # Pagination
 paginate: 5
@@ -53,7 +53,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © 2017 Kiko Now
+footer-text: wonseok jung
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -109,5 +109,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
-theme: jekyll-theme-cayman
