@@ -29,7 +29,7 @@ navigation:
   - name: Tags
     url: /tags
   - name: Theme
-    url: https://wonseokjung.github.io
+    url: https://github.com/AWEEKJ/kiko-now
 
 # Pagination
 paginate: 5
