@@ -1,0 +1,133 @@
+---
+title: "ubuntu에서 강화학습을 위한 스타크래프트2 실행하기"
+date: 2018-03-18 12:26:28 -0400
+categories: Reinforcementlearning update
+use_math : true
+---
+
+
+
+
+# 강화학습을 위한 Startcarft2 우분투에서 실행하기
+
+
+ubuntu에서 스타크래프트2 환경에서 강화학습 적용하기!
+
+이번엔 똑똑한 마린을 만들어보자!!
+
+
+## 1. Pysc2 설치
+
+딥마인드의 스타크래프트2 라이브러리 github주소
+
+
+[Deepmind Pysc2](https://github.com/deepmind/pysc2/)
+
+
+
+* pip로 설치하기
+
+`sudo pip3 install pysc2`
+
+
+* Git으로 클론하여 설치하기
+
+```
+$ git clone https://github.com/deepmind/pysc2.git
+$ pip install pysc2/
+```
+
+
+## 2 스타크래프트2 설치
+
+Linux 
+
+[설명서](https://github.com/Blizzard/s2client-proto#downloads)
+
+[스타크래프트2 리눅스 4.0.2 버전 다운받기](blzdistsc2-a.akamaihd.net/Linux/SC2.4.0.2.zip)
+
+
+
+
+## 3. 맵 다운받기
+
+아래의 주소를 클릭하여 Ladder maps과 minigames 을 다운받고 StarcraftII/Maps/ 폴더에 압축을 푼다. 
+
+
+
+
+[Melee](http://blzdistsc2-a.akamaihd.net/MapPacks/Melee.zip)
+
+[Ladder maps](https://github.com/Blizzard/s2client-proto#downloads)
+
+[Minigames](https://github.com/deepmind/pysc2/releases/download/v1.2/mini_games.zip)
+
+압축을 풀때 비밀번호가 걸려있다. 
+
+http://blzdistsc2-a.akamaihd.net/AI_AND_MACHINE_LEARNING_LICENSE.html 에 동의한다는 의미로 비밀번호를 입력
+
+압축 비밀번호 : iagreetotheeula 
+
+
+## 4. 실행
+
+아래의 명령어로 학습을 실행
+
+나의 경우 starcraft 디렉토리가 home/"제컴퓨터이름"/ 있어야 실행이 되었다. 
+
+default의 로케이션의 설정이 그런것 같다.
+
+* Agent 실행
+
+`python3 -m pysc2.bin.agent --map Simple64`
+
+
+* Agent가 random 한 action 하기
+```
+python3 -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.scripted_agent.CollectMineralShard
+```
+
+* Human 플레이
+
+`python -m pysc2.bin.play --map Simple64`
+
+
+## 5. Replay 보기
+
+`python3 -m pysc2.bin.play --replay <path-to-replay>`
+
+## 6. Map List보기
+
+`python3 -m pysc2.bin.map_list`
+
+
+## 7. 환경 구성요소
+
+https://github.com/deepmind/pysc2/blob/master/docs/environment.md
+
+## 8. 미니게임 맵
+
+The mini-game map files referenced in the paper are stored under pysc2/maps/ but must be installed in $SC2PATH/Maps. Make sure to follow the download instructions above.
+
+Maps are configured in the Python files in pysc2/maps/. The configs can set player and time limits, whether to use the game outcome or curriculum score, and a handful of other things. For more information about the maps, and how to configure your own, take a look here.
+https://github.com/deepmind/pysc2/blob/master/docs/maps.md
+
+## 9. 리플레이
+
+A replay lets you review what happened during a game. You can see the actions and observations that each player made as they played.
+
+Blizzard is releasing a large number of anonymized 1v1 replays played on the ladder. You can find instructions for how to get the replay files on their site. You can also review your own replays.
+
+Replays can be played back to get the observations and actions made during that game. The observations are rendered at the resolution you request, so may differ from what the human actually saw. Similarly the actions specify a point, which could reflect a different pixel on the human's screen, so may not have an exact match in our observations, though they should be fairly similar.
+
+Replays are version dependent, so a 3.15 replay will fail in a 3.16 binary.
+
+You can visualize the replays with the full game, or with pysc2.bin.play. Alternatively you can run pysc2.bin.replay_actions to process many replays in parallel.
+
+
+https://github.com/Blizzard/s2client-proto#downloads
+
+
+## Reference 
+* https://github.com/deepmind/pysc2/20
+* https://github.com/Blizzard/s2client-proto#download
